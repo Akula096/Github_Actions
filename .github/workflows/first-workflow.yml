@@ -12,5 +12,6 @@ jobs:
           run: echo "welcome messaage"
         - name: cowsay task
           run: |
+            sudo chmod +x script.sh
             ls -la
             ./script.sh
