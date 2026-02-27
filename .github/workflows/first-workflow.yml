@@ -8,3 +8,7 @@ jobs:
         steps:
         - name: welcome messaage
           run: echo "welcome messaage"
+        - name: list files
+          run: ls 
+        - name: read files
+          run: cat README.md
