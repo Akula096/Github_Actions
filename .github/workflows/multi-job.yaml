@@ -23,4 +23,4 @@ jobs:
               with:
                 name: file
             - name: read a file
-              run: cat file
+              run: cat file.txt
