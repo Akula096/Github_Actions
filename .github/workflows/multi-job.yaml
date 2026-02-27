@@ -18,6 +18,9 @@ jobs:
         needs: create-file
         runs-on: ubuntu-latest
         steps:
+            - name: donwload the artifact
+              uses: actions/download-artifact@v5
+              with:
+                name: file
             - name: read a file
-              run: cat file.txt 
-   
+              run: cat file
