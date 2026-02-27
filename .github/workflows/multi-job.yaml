@@ -3,10 +3,16 @@ name: multi-job-workflow
 on:  push
 
 jobs:
-    multi-job:
+    create-file:
         runs-on: ubuntu-latest
         steps:
             - name: create a file
               run: echo "sathish" > file.txt
-
-      
+    
+    read-file:
+        needs: create-file
+        runs-on: ubuntu-latest
+        steps:
+            - name: read a file
+              run: cat file.txt 
+   
