@@ -10,11 +10,5 @@ jobs:
           uses: actions/checkout@v6
         - name: welcome messaage
           run: echo "welcome messaage"
-        - name: list files
-          run: ls 
-        - name: install cowsay package
-          run: sudo apt install cowsay -y 
-        - name: cowsay
-          run: cowsay -f dragon > dragon.txt
-        - name: read the cowsay file
-          run: cat dragon.txt
+        - name: cowsay task
+          run: ./script.sh
