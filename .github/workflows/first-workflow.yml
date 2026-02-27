@@ -12,7 +12,9 @@ jobs:
           run: echo "welcome messaage"
         - name: list files
           run: ls 
-        - name: read files
-          run: cat README.md
         - name: install cowsay package
-          run: cowsay -f dragon 
+          run: sudo apt install cowsay -y 
+        - name: cowsay
+          run: cowsay -f dragon > dragon.txt
+        - name: read the cowsay file
+          run: cat dragon.txt
