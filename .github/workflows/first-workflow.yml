@@ -11,4 +11,6 @@ jobs:
         - name: welcome messaage
           run: echo "welcome messaage"
         - name: cowsay task
-          run: ./script.sh
+          run: |
+            ls -la
+            ./script.sh
