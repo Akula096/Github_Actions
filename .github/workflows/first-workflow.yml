@@ -6,6 +6,8 @@ jobs:
     first-job:
         runs-on: ubuntu-latest
         steps:
+        - name: checkout repo
+          uses: actions/checkout@v6
         - name: welcome messaage
           run: echo "welcome messaage"
         - name: list files
