@@ -8,6 +8,11 @@ jobs:
         steps:
             - name: create a file
               run: echo "sathish" > file.txt
+            - name: upload the file
+              uses: actions/upload-artifact@v4
+              with:
+                name: file
+                path: file.txt
     
     read-file:
         needs: create-file
